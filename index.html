@@ -4,85 +4,187 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="asset/style/index.css" />
   </head>
   <body>
     <main>
       <div class="container">
         <h1>Calc</h1>
         <div class="result">
-          <p>100000</p>
+          <p id="result"></p>
         </div>
         <div class="btn">
           <div class="key_line">
             <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">7</div>
+              <div
+                class="number text-center"
+                onclick="result = 7; 
+                document.querySelector('#result').innerText += result;"
+              >
+                7
+              </div>
             </div>
             <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">8</div>
+              <div
+                class="number text-center"
+                onclick="result = 8; 
+                document.querySelector('#result').innerText += result;"
+              >
+                8
+              </div>
             </div>
             <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">9</div>
+              <div
+                class="number text-center"
+                onclick="result = 9; 
+                document.querySelector('#result').innerText += result;"
+              >
+                9
+              </div>
             </div>
             <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">DEL</div>
-            </div>
-          </div>
-
-          <div class="key_line">
-            <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">4</div>
-            </div>
-            <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">5</div>
-            </div>
-            <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">6</div>
-            </div>
-            <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">+</div>
-            </div>
-          </div>
-
-          <div class="key_line">
-            <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">1</div>
-            </div>
-            <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">2</div>
-            </div>
-            <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">3</div>
-            </div>
-            <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">-</div>
+              <div
+                class="number text-center"
+                onclick=" document.querySelector('#result').innerText = document.querySelector('#result').innerText.slice(0, -1);"
+              >
+                DEL
+              </div>
             </div>
           </div>
 
           <div class="key_line">
             <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">.</div>
+              <div
+                class="number text-center"
+                onclick="result = 4; 
+                document.querySelector('#result').innerText += result;"
+              >
+                4
+              </div>
             </div>
             <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">0</div>
+              <div
+                class="number text-center"
+                onclick="result = 5; 
+                document.querySelector('#result').innerText += result;"
+              >
+                5
+              </div>
             </div>
             <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">/</div>
+              <div
+                class="number text-center"
+                onclick="result = 6; 
+                document.querySelector('#result').innerText += result;"
+              >
+                6
+              </div>
             </div>
             <div class="margen-boton">
-              <div class="number text-center" onclick="calculator(7)">x</div>
+              <div
+                class="number text-center"
+                onclick="result = '+'; 
+                document.querySelector('#result').innerText += result;"
+              >
+                +
+              </div>
             </div>
           </div>
 
           <div class="key_line">
             <div class="margen-boton">
-              <div class="key-reset text-center" onclick="calculator('reset')">
+              <div
+                class="number text-center"
+                onclick="result = 1; 
+                document.querySelector('#result').innerText += result;"
+              >
+                1
+              </div>
+            </div>
+            <div class="margen-boton">
+              <div
+                class="number text-center"
+                onclick="result = 2; 
+                document.querySelector('#result').innerText += result;"
+              >
+                2
+              </div>
+            </div>
+            <div class="margen-boton">
+              <div
+                class="number text-center"
+                onclick="result = 3; 
+                document.querySelector('#result').innerText += result;"
+              >
+                3
+              </div>
+            </div>
+            <div class="margen-boton">
+              <div
+                class="number text-center"
+                onclick="result = '-'; 
+                document.querySelector('#result').innerText += result;"
+              >
+                -
+              </div>
+            </div>
+          </div>
+
+          <div class="key_line">
+            <div class="margen-boton">
+              <div
+                class="number text-center"
+                onclick="result = '.'; 
+                document.querySelector('#result').innerText += result;"
+              >
+                .
+              </div>
+            </div>
+            <div class="margen-boton">
+              <div
+                class="number text-center"
+                onclick="result = 0; 
+                document.querySelector('#result').innerText += result;"
+              >
+                0
+              </div>
+            </div>
+            <div class="margen-boton">
+              <div
+                class="number text-center"
+                onclick="result = '/'; 
+                document.querySelector('#result').innerText += result;"
+              >
+                /
+              </div>
+            </div>
+            <div class="margen-boton">
+              <div
+                class="number text-center"
+                onclick="result = '*'; 
+                document.querySelector('#result').innerText += result;"
+              >
+                x
+              </div>
+            </div>
+          </div>
+
+          <div class="key_line">
+            <div class="margen-boton">
+              <div
+                class="key-reset text-center"
+                onclick="document.querySelector('#result').innerText = '';"
+              >
                 RESET
               </div>
             </div>
 
             <div class="margen-boton">
-              <div class="key-equal text-center" onclick="calculator('reset')">
+              <div
+                class="key-equal text-center"
+                onclick="
+                document.querySelector('#result').innerText = eval(document.querySelector('#result').innerText);"
+              >
                 =
               </div>
             </div>
@@ -90,5 +192,9 @@
         </div>
       </div>
     </main>
+
+    <script>
+      let result = " ";
+    </script>
   </body>
 </html>

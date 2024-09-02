@@ -34,6 +34,7 @@ main {
       border-radius: 10px;
 
       p {
+        height: 48px;
         text-align: right;
         margin: 1vw 2vw 1vw 0vw;
       }
